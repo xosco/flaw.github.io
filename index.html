@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flaw — pre-release</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -2268,6 +2268,14 @@
             }
         }
 
+
+        .nav-btn,
+        .mobile-nav-btn {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
@@ -2281,6 +2289,7 @@
             <div class="desktop-menu">
                 <button class="nav-btn" onclick="showTab('the-why')">preview</button>
                 <button class="nav-btn" onclick="showTab('contacts')">contacts</button>
+                <a class="nav-btn" href="news.html">news</a>
                 <button class="btn-cta-nav" id="navBookBtnDesktop">join waitlist</button>
             </div>
             <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -2288,6 +2297,7 @@
         <div class="mobile-dropdown" id="mobileDropdown">
             <button class="mobile-nav-btn" onclick="mobileTabClick('the-why')">preview</button>
             <button class="mobile-nav-btn" onclick="mobileTabClick('contacts')">contacts</button>
+            <a class="mobile-nav-btn" href="news.html">news</a>
             <div class="mobile-cta-container">
                 <button class="btn-cta-nav" id="navBookBtnMobile" style="width: 100%;">join waitlist</button>
             </div>
