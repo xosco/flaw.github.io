@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAW logo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --logo-size: clamp(64px, 14vw, 180px);
+            --logo-color: #f0eee6;
+            --accent-color: #b9c08f;
+            --background-color: #050607;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(185,192,143,.10), transparent 34%),
+                linear-gradient(145deg, #11150e 0%, #090b0d 46%, var(--background-color) 100%);
+            color: var(--logo-color);
+            font-family: 'Space Grotesk', Arial, sans-serif;
+        }
+
+        .export-area {
+            display: grid;
+            place-items: center;
+            width: min(92vw, 1200px);
+            aspect-ratio: 16 / 7;
+            padding: 8vw;
+        }
+
+        .flaw-logo {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--logo-color);
+            font-family: 'Space Grotesk', Arial, sans-serif;
+            font-size: var(--logo-size);
+            font-weight: 700;
+            line-height: .86;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            text-rendering: geometricPrecision;
+            -webkit-font-smoothing: antialiased;
+            text-shadow: 0 0 .22em rgba(185,192,143,.11);
+        }
+
+        .flaw-logo::after {
+            content: "";
+            position: absolute;
+            left: .02em;
+            right: calc(.18em + .02em);
+            bottom: -.18em;
+            height: max(2px, .018em);
+            border-radius: 999px;
+            background: linear-gradient(90deg, rgba(185,192,143,.94), rgba(185,192,143,0));
+        }
+
+        @media (max-width: 640px) {
+            :root {
+                --logo-size: clamp(52px, 18vw, 110px);
+            }
+
+            .export-area {
+                width: 100vw;
+                aspect-ratio: 4 / 3;
+            }
+
+            .flaw-logo {
+                letter-spacing: .15em;
+            }
+
+            .flaw-logo::after {
+                right: calc(.15em + .02em);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="export-area" aria-label="FLAW logo export area">
+        <div class="flaw-logo">FLAW</div>
+    </main>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a11e32c56d1edc81',t:'MTc4MjQ5NzczNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
