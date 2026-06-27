@@ -1,0 +1,24 @@
+{
+  "news": [
+    {
+      "id": "private-preview-forming",
+      "date": "2026-06-26",
+      "tag": "preview",
+      "title": "Private preview is forming",
+      "subtitle": "The first FLAW waitlist wave is being prepared.",
+      "text": "FLAW is still in pre-release. This page will be used for short launch notes, access updates and important status changes before the first public build.",
+      "image": "assets/news/private-preview.svg",
+      "pinned": true
+    },
+    {
+      "id": "waitlist-open",
+      "date": "2026-06-18",
+      "tag": "waitlist",
+      "title": "Waitlist is open",
+      "subtitle": "Early access notifications are collected before launch.",
+      "text": "Users can leave an email in the waitlist modal. The current form is visual-only until the real backend is connected.",
+      "image": "",
+      "pinned": false
+    },
+      ]
+}
